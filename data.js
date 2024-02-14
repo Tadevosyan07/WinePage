@@ -1,4 +1,72 @@
-const data = [
+import bcrypt from 'bcrypt'
+
+export const users = [
+    {
+        name: "John Doe",
+        email: "john.doe@example.com",
+        password: bcrypt.hashSync("password1", 10),
+        phoneNumber: "123-456-7890",
+        address: "123 Main St, Exampleville, CA 12345"
+    },
+    {
+        name: "name",
+        email: "email",
+        password: bcrypt.hashSync("password2", 10),
+        phoneNumber: "098-765-4321",
+        address: "456 Elm St, Exampletown, NY 67890"
+    },
+    {
+        name: "Alice Johnson",
+        email: "alice.johnson@example.com",
+        password: bcrypt.hashSync("password3", 10),
+        phoneNumber: "123-456-7891",
+        address: "789 Oak St, Exampleton, CA 12345"
+    },
+    {
+        name: "Bob Brown",
+        email: "bob.brown@example.com",
+        password: bcrypt.hashSync("password4", 10),
+        phoneNumber: "123-456-7892",
+        address: "123 Main St, Exampleville, CA 12345"
+    },
+    {
+        name: "Charlie Davis",
+        email: "charlie.davis@example.com",
+        password: bcrypt.hashSync("password5", 10),
+        phoneNumber: "123-456-7893",
+        address: "456 Elm St, Exampletown, NY 67890"
+    },
+    {
+        name: "David Green",
+        email: "david.green@example.com",
+        password: bcrypt.hashSync("password6", 10),
+        phoneNumber: "123-456-7894",
+        address: "789 Oak St, Exampleton, CA 12345"
+    },
+    {
+        name: "Emily Hill",
+        email: "emily.hill@example.com",
+        password: bcrypt.hashSync("password7", 10),
+        phoneNumber: "123-456-7895",
+        address: "123 Main St, Exampleville, CA 12345"
+    },
+    {
+        name: "Frank Lee",
+        email: "frank.lee@example.com",
+        password: bcrypt.hashSync("password8", 10),
+        phoneNumber: "123-456-7896",
+        address: "456 Elm St, Exampletown, NY 67890"
+    },
+    {
+        name: "Grace Miller",
+        email: "grace.miller@example.com",
+        password: bcrypt.hashSync("password9", 10),
+        phoneNumber: "123-456-7897",
+        address: "789 Oak St, Exampleton, CA 12345"
+    }
+];
+
+export const wines = [
     {
         brand: "Koor",
         name: "red sweet wine",
@@ -155,4 +223,3 @@ const data = [
     },
 ];
 
-export default data;
